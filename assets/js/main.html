@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intersection Observers</title>
+</head>
+<style>
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .card{
+        background: white;
+        border: 1px solid black;
+        border-radius: .25rem;
+        padding: .5rem;
+        transform: translateX(100px);
+        opacity: 0;
+        transition: 150ms;
+    }
+    .card.show{
+        transform: translateX(0);
+        opacity: 1;
+    }
+</style>
+<body>
+    <div class="card-container">
+        <div class="card show">This is my first card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+        <div class="card">This is a card</div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
