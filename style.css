@@ -824,10 +824,10 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 #progress{
   background-color: #4ac4f3;
   position: fixed;
-  bottom: 20px;
-  right: 40px;
-  height: 70px;
-  width: 70px;
+  bottom: 30px;
+  right: 30px;
+  height: 60px;
+  width: 60px;
   display: grid;
   color: #d7d7d7;
   place-items: center;
@@ -836,9 +836,9 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
   cursor: pointer;
   border: none;
   z-index: 10000;
-  overflow: hidden;
 }
 #progress-value{
+  overflow-x: hidden;
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
@@ -4019,12 +4019,11 @@ footer.color-yellow .footer-bottom p a {
 }
 
 .se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
+  display: grid;
+  place-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: 999999;
-  background: url(assets/img/preloader.gif) center no-repeat #fff;
+  background: url(assets/img/preloader.gif) center center no-repeat #fff;
   text-align: center;
 }
